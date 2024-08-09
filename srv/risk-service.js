@@ -60,10 +60,7 @@ module.exports = cds.service.impl(async function() {
             },
         });
     });
- 
-   
- 
- 
+  
     // Risks?$expand=bp (Expand on BusinessPartner)
     this.on("READ", Risks, async (req, next) => {
         /*
@@ -115,6 +112,5 @@ module.exports = cds.service.impl(async function() {
  
         return risks;
     });
- 
- 
   });
+ 

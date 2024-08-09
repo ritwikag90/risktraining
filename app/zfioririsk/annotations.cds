@@ -37,8 +37,8 @@ annotate service.Risks with @(
             },
             {
                 $Type : 'UI.DataFieldForAnnotation',
-                Target : 'bp/@Communication.Contact#contact1',
-                Label : 'FullName',
+                Target : 'bp/@Communication.Contact#contact3',
+                Label : 'Full Name',
             },
         ],
     },
@@ -75,8 +75,8 @@ annotate service.Risks with @(
         },
         {
             $Type : 'UI.DataFieldForAnnotation',
-            Target : 'bp/@Communication.Contact#contact',
-            Label : 'Business Partner',
+            Target : 'bp/@Communication.Contact#contact2',
+            Label : 'Business Patner',
         },
     ],
     Communication.Contact #contact : {
@@ -117,6 +117,14 @@ annotate service.BusinessPartners with @(
         fn : BusinessPartner,
     },
     Communication.Contact #contact1 : {
+        $Type : 'Communication.ContactType',
+        fn : FullName,
+    },
+    Communication.Contact #contact2 : {
+        $Type : 'Communication.ContactType',
+        fn : BusinessPartner,
+    },
+    Communication.Contact #contact3 : {
         $Type : 'Communication.ContactType',
         fn : FullName,
     },
